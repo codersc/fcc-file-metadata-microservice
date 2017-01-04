@@ -19,6 +19,4 @@ app.post('/', upload.any(), function(req, res, next) {
     res.send(JSON.stringify({ size: req.files[0].size }, null, 3));    
 });
 
-app.listen(8080, function () {
-  console.log('Example app listening on port 3000!');
-});
+app.listen(port);
